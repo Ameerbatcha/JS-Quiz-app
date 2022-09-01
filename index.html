@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="quiz_logo.jpg" type="image">
+    <link rel="stylesheet" href="style.css">
+    <title>QUIZ App Home Page</title>
+</head>
+
+<body>
+
+
+    <!-- home page code  -->
+
+    <div id="container" class="quiz-home-box custom-box bordershadow">
+
+        <div id="userdetail">
+            <div id="logo">
+                <img src="quiz_logo.jpg" alt="img not found" width="90em" height="55em">
+            </div>
+
+            <div id="welcome_note">
+                <p class="blue">Hellow Users!</p>
+                <p>Enter your Name to Continue the Quiz</p>
+            </div>
+
+            <div id="nameshower" class=""></div>
+
+            <div id="namearea">
+                    <input type="text" id="nametext" placeholder="ENTER YOUR NAME..." width="80%">
+                    <button  id="btnenter" onclick="displayname()">Enter</button>
+            </div>
+
+
+            <div id="examnotes">
+                <p> You will have ten Seconds to answer each questions</p>
+            </div>
+
+        </div>
+
+        <div id="categories">
+            <div id="categoryheader">
+                <p class="blue">Select Category</p>
+            </div>
+
+            <div id="categorylayer"> 
+                <!-- <button>Pipes and Cisterns</button> 
+                <button>Probability</button>
+                <button>Problems on Ages</button> 
+                <button>Profit And Loss</button> -->
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- quiz page code -->
+
+    <div id="qp_container" class="quiz-box custom-box hide bordershadow">
+
+
+        <div id="qp_header">
+            <p id="qp_header_title">Pipes and Cisterns</p>
+        </div>
+
+        <div id="qp_timescore">
+            <div id="qp_timer" class="blues">300 </div>
+            <p><span id="qp_scorecard1">SCORE</span>:<span id="qp_scorecard2">0</span></p>
+        </div>
+
+        <div id="qp_qnno">
+            <p id="qp_qnno_holder" class="blues"><span id="qp_qnno_holder1">0</span>/<span
+                    id="qp_qnno_holder2">10</span></p>
+        </div>
+
+        <div id="qp_question">
+            <p id="qp_questions">Question will be here</p>
+        </div>
+
+        <div id="qp_answer_holder"> 
+            <!-- <button>option1</button> 
+            <button>option2</button>
+            <button>option3</button> 
+            <button>option4</button> -->
+        </div>
+        
+
+        <div class="answer-description"></div>
+
+        <div id="qp_next_qn">
+            <button id="qp_next_qnbtn1" class="blues next-question-btn hide">Next Question</button>
+            <button id="qp_next_qnbtn2" class="blues see-result-btn hide">See Your Results</button>
+
+        </div>
+
+    </div>
+
+
+    <!-- result page styles  -->
+
+    <div id="qr_container" class="quiz-over-box hide animated bordershadow">
+        <div id="qr_header" class="bolder">Quiz Result</div>
+
+        <p id="qr_name_holder"><span id="qr_name" class="bolder">AMEER</span><span> your result is:</span></p>
+        <p id="qr_time_holder"><span id="">Total Time taken : </span><span id="qr_time" class="bolder">110</span></p>
+        <p id="qr_topic_holder"><span id="">Topic Chosen : </span><span id="qr_topic" class="bolder">110</span></p>
+        <p id="qr_questions_holder"><span>Total Question :</span><span id="qr_questions" class="bolder">10</span></p>
+        <p id="qr_attempt_holder"><span>Attempt :</span><span id="qr_attempt" class="bolder">10</span></p>
+        <p id="qr_correct_holder"><span>Correct :</span><span id="qr_correct" class="bolder">3</span></p>
+        <p id="qr_wrong_holder"><span>Wrong :</span><span id="qr_wrong" class="bolder">7</span></p>
+        <p id="qr_percentage_holder"><span>Percentage :</span><span id="qr_percentage" class="bolder">30.54%</span></p>
+
+        <div id="qr_footer" >
+            <button id="btnstartagain">Start Again</button>
+            <button id="btngotohome">GoTo Home</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
